@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Position Line Demo</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #0f2027;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+/* Section */
+.section {
+  margin-bottom: 40px;
+}
+
+/* Title */
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Container (important) */
+.container {
+  width: 100%;
+  max-width: 500px;
+  height: 120px;
+  border: 1px dashed rgba(255,255,255,0.4);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Glass Box */
+.box {
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/* Animation */
+@keyframes moveInside {
+  0% { left: 0; }
+  50% { left: calc(100% - 120px); }
+  100% { left: 0; }
+}
+
+/* STATIC */
+.static-box {
+  position: static;
+  animation: moveInside 5s infinite;
+}
+
+/* RELATIVE */
+.relative-box {
+  position: relative;
+  animation: moveInside 5s infinite;
+}
+
+/* ABSOLUTE */
+.absolute-box {
+  position: absolute;
+  animation: moveInside 5s infinite;
+}
+
+/* STICKY */
+.sticky-box {
+  position: sticky;
+  top: 0;
+  animation: moveInside 5s infinite;
+}
+
+/* FIXED */
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  animation: moveInside 5s infinite;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- STATIC -->
+<div class="section">
+  <div class="title">STATIC</div>
+  <div class="container">
+    <div class="box static-box">STATIC</div>
+  </div>
+</div>
+
+<!-- RELATIVE -->
+<div class="section">
+  <div class="title">RELATIVE</div>
+  <div class="container">
+    <div class="box relative-box">RELATIVE</div>
+  </div>
+</div>
+
+<!-- ABSOLUTE -->
+<div class="section">
+  <div class="title">ABSOLUTE</div>
+  <div class="container">
+    <div class="box absolute-box">ABSOLUTE</div>
+  </div>
+</div>
+
+<!-- STICKY -->
+<div class="section">
+  <div class="title">STICKY</div>
+  <div class="container">
+    <div class="box sticky-box">STICKY</div>
+  </div>
+</div>
+
+<!-- FIXED -->
+<div class="section">
+  <div class="title">FIXED</div>
+  <div class="container">
+    <div class="box fixed-box">FIXED</div>
+  </div>
+</div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere ipsum alias numquam? Sit pariatur asperiores dolore ex quasi. Provident modi eum laborum officiis, nostrum ab ipsam, temporibus non quia doloribus a accusamus iste voluptatibus aliquid maxime esse aperiam maiores fugit repellat consequatur assumenda deserunt! Eos magnam dolorum provident ad natus odit nulla, voluptatem repellat at animi, harum aliquam ipsa corporis cum illo impedit vel dolore rerum modi! Repellendus hic sequi labore eaque ut voluptatem unde! Porro magnam accusamus consectetur nihil temporibus architecto recusandae inventore excepturi. Nostrum a debitis sapiente ullam facere, illo quam. Asperiores tempora consequatur officia laboriosam nostrum in eum id distinctio, amet voluptatem totam minus natus minima voluptas. Facilis porro tenetur minima autem repellat officiis iusto hic non nisi distinctio qui fugiat unde, praesentium illum molestiae, deleniti itaque quae repudiandae delectus? Culpa quo delectus, dolore ullam quam fugit esse quibusdam voluptatibus debitis atque quas, facere, excepturi nisi dignissimos molestias facilis nobis sit quia nam aliquam autem officia minus. Aut incidunt dolore, sint suscipit sequi non ad temporibus ut in possimus quidem. At voluptate dolore unde. Obcaecati natus fugiat rem magnam itaque quam? Deleniti et aut vel! Omnis deleniti impedit ab possimus ipsa nobis iure sequi, laborum, nulla repudiandae doloribus voluptatem quos eaque quibusdam hic natus, velit explicabo repellendus harum voluptatum nostrum amet sint qui. Adipisci, ipsum soluta hic aliquam velit optio ullam quam saepe esse voluptatem dolorem veritatis nulla consectetur vitae, a distinctio facilis laudantium omnis dolores, voluptate libero animi pariatur suscipit sequi. Quos harum incidunt adipisci in placeat eos neque ratione recusandae sapiente possimus quae quaerat voluptatum deserunt officiis veniam fuga expedita maxime tempore officia qui, dolor, modi magni dolorum eaque. Sit non autem, quo consequatur omnis unde a amet eaque. Veritatis, optio expedita! Reprehenderit ea error aliquam animi a, sunt deserunt earum recusandae necessitatibus in alias facilis totam velit, labore hic, omnis iure modi corrupti atque laborum! Amet aspernatur odit error obcaecati est inventore beatae eum ab facilis omnis veritatis nostrum numquam natus, adipisci ipsa architecto. Minima, porro libero? Eligendi nemo voluptatibus aliquid. Culpa quam exercitationem accusantium in odit deleniti veritatis iusto, voluptates libero cum, enim sed eaque, deserunt debitis doloremque officia consectetur. Aperiam aliquam sequi dolor in. Nam, quod accusantium? In similique odio consectetur porro sunt temporibus consequuntur cupiditate, expedita minus. Officia, eius modi! Porro labore, earum, a quas necessitatibus, vel accusamus aperiam quibusdam assumenda optio eligendi laboriosam aut pariatur? Placeat quam nisi, beatae quibusdam dolores doloremque fugit earum fuga nobis, ipsa officia sequi ducimus sapiente vero illum, quasi nemo temporibus! Ducimus veritatis animi officiis velit ipsa aut officia architecto, facilis porro quam vel culpa deserunt. Id eius ad fuga quaerat nobis reprehenderit, maxime, provident amet officiis quae explicabo maiores harum est dignissimos, iusto voluptas quibusdam. Magni fugit exercitationem culpa sequi ut distinctio odio amet odit illum. Atque dolor molestiae quis modi sed labore, pariatur, veritatis cupiditate illo commodi ratione illum deleniti asperiores quidem nesciunt quod aliquam inventore velit animi. Eligendi maxime reiciendis at. Debitis eveniet molestias dolorem totam iure sint, deserunt nobis optio.
+</p>
+</body>
+</html>

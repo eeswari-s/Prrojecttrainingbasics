@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: #eef3f4;
+            color: #1d1d1d;
+        }
+        /*navba*/
+        header{
+            background: white;
+            padding: 10px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        nav{
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .nav-btn{
+            background: #0d2c38;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        /*hero*/
+
+        .hero{
+            background: url("assests/bg1.png") no-repeat center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .hero-content{
+            max-width: 650px;
+            color: white;
+        }
+
+        .hero-content h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero-content p{
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .hero-content button{
+            background: #0d2c38;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        /*product block */
+
+        .section{
+            background: white;
+            padding: 90px 6%;
+
+        }
+        .product{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .product img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-text h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .product-text p{
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .product-text button{
+            background: #0d2c38;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Bower</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" class="nav-btn">Discover now</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Acs office dis took llore its high</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, consectetur.</p>
+            <button>Discover collections</button>
+        </div>
+    </section>
+
+    <section class="section">
+
+
+        <div class="product">
+            <div class="product-text">
+                <h2> Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, exercitationem.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia, natus corporis cum quis hic.</p>
+                <button>Shop Now</button>
+            </div>
+            <img src="assests/two.png">
+        </div>
+
+        <div class="product">
+            <img src="assests/three.png">
+            <div class="product-text">
+                <h2> Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, exercitationem.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia, natus corporis cum quis hic.</p>
+                <button>Shop Now</button>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
